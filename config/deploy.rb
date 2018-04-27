@@ -30,7 +30,7 @@ set :deploy_to, "/srv/www/apps/redmine"
 set :linked_files, fetch(:linked_files, []).push('config/unicorn.rb','config/database.yml', 'config/configuration.yml', 'config/secrets.yml')
 
 # Default value for linked_dirs is []
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "cookie", "files"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "cookie", "files, plugins"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
